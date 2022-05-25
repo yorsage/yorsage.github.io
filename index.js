@@ -49,7 +49,29 @@ $(window).on('scroll', function () {
     $('#aboutMe').css('margin-top', $(window).scrollTop() * -0.1);
 });
 
+function detectMob() {
+    const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i
+    ];
+
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+}
+
+if (detectMob()) {
+    $("#homeTitle").css("left", "50px");
+    $("#homeTitle").css("opacity", 1)
+}
+
 const startScroll = () => {
+    if (detectMob()) return;
     let current = window.scrollY || window.pageYOffset
 
     if ((current >= target && !isIn) || (current <= target && isIn)) {
