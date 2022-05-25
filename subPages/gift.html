@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Gift Event - 2022</title>
+    <link rel="stylesheet" href="gift.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="giftCont">
+        <div id="encryptedGift">Encrypted gift</div>
+        <div class="break"></div>
+        <div id="giftInstructions">Answer the questions to decrypt the gift.</div>
+        <div class="break"></div>
+        <div id="giftPrompt">what is</div>
+        <div class="break"></div>
+        <div id="giftBtns">
+            <input id="giftGuess" type="text">
+            <button id="giftBtn">Submit</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+        integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+    <script type="module" src="gift.js"></script>
+</body>
+
+</html>
