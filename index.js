@@ -14,12 +14,6 @@ let styles = [
 console.log(msg, styles);
 
 const gallery = document.getElementById("galleryCont")
-if (CONSTS.gallery.length % 3 != 0) {
-    // pad it for formatting
-    for (let i = 0; i < 3 - (CONSTS.gallery.length % 3); ++i) {
-        CONSTS.gallery.push(false)
-    }
-}
 
 // add gallery items
 for (let item of CONSTS.gallery) {
