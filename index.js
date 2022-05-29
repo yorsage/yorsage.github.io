@@ -17,18 +17,14 @@ const gallery = document.getElementById("galleryCont")
 
 // add gallery items
 for (let item of CONSTS.gallery) {
-    if (!item) {
-        gallery.innerHTML += `<div class="hiddenElem"></div>`
-        continue;
-    }
 
-    gallery.innerHTML += `<div class="galleryElem" style="background-image: url(${item.thumbnailUrl})" onClick="(function() {window.open('${item.url}')})()">
+    gallery.innerHTML += `<div class="galleryElemCont"><div class="galleryElem" style="background-image: url(${item.thumbnailUrl})" onClick="(function() {window.open('${item.url}')})()">
     <div class="galleryOverlay"></div>
     <div class="galleryElemMisc">
         <div class="galleryElemTitle">${item.title}</div>
         <div class="galleryElemDesc">${item.desc}</div>
     </div>
-</div>`
+</div></div>`
 }
 
 const target = 800
