@@ -317,6 +317,15 @@ body {
     position: relative;
 }
 
+.galleryElemCont {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 .galleryElem {
     width: 350px;
     height: 350px;
@@ -328,7 +337,6 @@ body {
     background-image: url("./resource/media/yor.jpg");
     background-size: 350px;
     background-repeat: no-repeat;
-    margin-top: 50px;
 }
 
 .galleryElem:hover {
