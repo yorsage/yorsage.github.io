@@ -1,7 +1,7 @@
 import CONSTS from "./constants.js"
 
 // npm run server to run
-let msg = "%c Stop inspecting the site! :D\n- randy sim";
+let msg = "%c Stop inspecting the site! :D";
 let styles = [
     "font-size: 12px",
     "font-family: monospace",
