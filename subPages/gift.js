@@ -15,7 +15,7 @@ let prompt = document.getElementById("giftPrompt");
 let input = document.getElementById("giftGuess")
 let btn = document.getElementById("giftBtn")
 
-gift.innerHTML = "U2FsdGVkX1+pjh9pX8aLO15WSePMDbOZutVK4oGkRV4cG+tff3IwnNC7lFyJ41VNUidftQsm56R5OVzqpX5XEmd7xys7YaTGTqzjklUtQy49mM+FbPW6ekO1/KrxDB6yX/a3gxZPjKfph2TrWbVZBQ=="
+gift.innerHTML = "U2FsdGVkX1+bJmsirIEz7GhtA4LKcKWN3m8xiKeOAkjFMHq2ggF50tcOefv6LxarAsK2pJl0KOR34sRJ3LRePnPVklHut0PIB/S4wm7KpJ2VgwGHBsJAWn7RmDcyUReoOyG1QZ+tlyPXNSFIz6ZTeYqdeHTcIieX4jtRCrH3reZ0+R6d4sSLXMS/OGQae228Tgdan+Sp9XCEacPRSSHxkcE9qGyurCLY83bUZuf0CmY="
 
 let prompts = [
     "what is another name for the immortal rank in valorant? (all lower case, ends with an s)",
